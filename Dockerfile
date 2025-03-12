@@ -19,6 +19,7 @@ RUN npm run build
 # Install http-server globally
 RUN npm install -g http-server
 
+
 # Expose port 8080
 EXPOSE 8080
 
