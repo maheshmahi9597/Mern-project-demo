@@ -1,0 +1,21 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: mern-app
+  labels:
+    app: mern-app
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      app: mern-app
+  template:
+    metadata:
+      labels:
+        app: mern-app
+    spec:
+      containers:
+      - name: mern-app
+        image: mahimani/mern-app-demo:latest
+        ports:
+        - containerPort: 8080
