@@ -8,4 +8,4 @@ spec:
   ports:
   - name: mern-app
     protocol: TCP
-    port: 8080
+    port: 8000
