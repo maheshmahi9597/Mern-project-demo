@@ -21,7 +21,7 @@ RUN npm install -g http-server
 
 
 # Expose port 8080
-EXPOSE 8080
+EXPOSE 8000
 
 # Serve the build directory using http-server
-CMD ["http-server", "dist", "-p", "8080"]
+CMD ["http-server", "dist", "-p", "8000"]
